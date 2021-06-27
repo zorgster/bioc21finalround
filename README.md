@@ -16,8 +16,9 @@ The code works fast in all of the tests but only scores incompletely (221 pts ou
     # assuming 10 tests
     # run_many will run the code 99 times and then take the median answers for each test.
     # 99 times runs in about 5 seconds, 999 times in 20-30 seconds, 9999 times in 1 minute or so
+    # find parameter is the seed (42) for random()
     
-    q3.run_many("test3", 99, 10)
+    q3.run_many("test3", 99, 10, 42)
     
     # run once using:
     q3.readfile("test3")    
