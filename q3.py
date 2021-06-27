@@ -69,7 +69,7 @@ def readfile(filename, randomseed=42):
     # used to return list of answers to run_many()
     return results
 
-def run_many(filename, runs=5, people=10):
+def run_many(filename, runs=5, people=10, randomseed=42):
     """
     runs readfile_1(filename) * 'runs'
     result added to numpy array
@@ -85,3 +85,4 @@ def run_many(filename, runs=5, people=10):
     resmed = np.median(res, axis=0)
     np.savetxt("out-{}.txt".format(filename), resmed, delimiter=" ", fmt="%d")
     return resmed
+
