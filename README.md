@@ -20,6 +20,5 @@ The code works fast in all of the tests but only scores incompletely (221 pts ou
     q3.run_many("test3", 99, 10)
     
     # run once using:
-    q3.readfile_v1("test3")
-    
+    q3.readfile("test3")    
 ```
